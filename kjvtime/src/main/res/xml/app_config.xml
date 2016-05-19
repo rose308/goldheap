@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu
+        devotion="true"
+        songs="true"
+		dictionary="true"
+		guide="true"
+		commentary="true"
+	/>
+
+	<devotions>
+		<devotion name="sh" />
+		<devotion name="rh" />
+		<devotion name="meid-a" />
+		<devotion name="refheart" />
+		<devotion name="roc" />
+		<devotion name="me-en" />
+	</devotions>
+
+	<internal locale="en" shortName="KJV"      longName="King James" prefix="ddd"  preset_name='en-kjv' />
+</config>

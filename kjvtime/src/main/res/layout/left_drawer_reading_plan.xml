@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<view
+	class="yuku.alkitab.base.widget.LeftDrawer$ReadingPlan"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/left_drawer"
+	android:layout_width="@dimen/left_drawer_width"
+	android:layout_height="match_parent"
+	android:layout_gravity="start"
+	android:background="#263238"
+	android:elevation="4dp"
+	tools:ignore="Overdraw">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:showDividers="middle">
+
+		<include
+			layout="@layout/left_drawer_header"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+		<android.support.v4.widget.NestedScrollView
+			android:id="@+id/scrollDescription"
+			android:layout_width="match_parent"
+			android:layout_height="128dp">
+
+			<TextView
+				android:id="@+id/tDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textAppearance="?android:textAppearanceSmall"
+				tools:text="*Info Bla bla bla, bla bla, bla bla, bla bla, bla bla, blablabla, blablablabla." />
+
+		</android.support.v4.widget.NestedScrollView>
+
+		<Button
+			android:id="@+id/bRestart"
+			style="?buttonBarButtonStyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/ic_av_skip_previous"
+			android:drawablePadding="16dp"
+			android:gravity="left|center_vertical"
+			android:text="@string/rp_menuRestart"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="?android:textColorPrimary"
+			android:textSize="16sp" />
+
+		<include
+			layout="@layout/left_drawer_footer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+</view>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<com.mobeta.android.dslv.DragSortListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" />
+
+	<RelativeLayout
+		android:id="@+id/panelGotoSync"
+		android:layout_width="match_parent"
+		android:layout_height="52dp"
+		android:background="#262626">
+
+		<Button
+			android:id="@+id/bGotoSync"
+			style="?buttonBarButtonStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="?selectableItemBackgroundBorderless"
+			android:padding="16dp"
+			android:text="@string/bl_sync_suggest"
+			android:textColor="#fff" />
+	</RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="@string/pref_alphabeticBookSort_key"
+		android:summary="@string/pref_tampilkan_kitab_dalam_urutan_abjad_bukan_urutan_aslinya"
+		android:title="@string/pref_kitab_menurut_abjad" />
+
+	<ListPreference
+		android:defaultValue="@string/pref_volumeButtonNavigation_default"
+		android:entries="@array/pref_volumeButtonNavigation_labels"
+		android:entryValues="@array/pref_volumeButtonNavigation_values"
+		android:key="@string/pref_volumeButtonNavigation_key"
+		android:negativeButtonText="@null"
+		android:positiveButtonText="@null"
+		android:title="@string/pref_volumeButtonNavigation_title" />
+
+	<CheckBoxPreference
+		android:defaultValue="@bool/pref_autoDictionaryAnalyze_default"
+		android:key="@string/pref_autoDictionaryAnalyze_key"
+		android:summary="@string/pref_autoDictionaryAnalyze_summary"
+		android:title="@string/pref_autoDictionaryAnalyze_title" />
+
+	<CheckBoxPreference
+		android:defaultValue="@bool/pref_tapToEditNote_default"
+		android:key="@string/pref_tapToEditNote_key"
+		android:summary="@string/pref_tapToEditNote_summary"
+		android:title="@string/pref_tapToEditNote_title" />
+
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="@string/pref_showHiddenVersion_key"
+		android:title="@string/pref_showHiddenVersion_title" />
+</PreferenceScreen>

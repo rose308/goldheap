@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<view
+	class="yuku.alkitab.base.widget.LeftDrawer$Devotion"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/left_drawer"
+	android:layout_width="@dimen/left_drawer_width"
+	android:layout_height="match_parent"
+	android:layout_gravity="start"
+	android:background="@color/primary"
+	android:elevation="4dp"
+	tools:ignore="Overdraw">
+
+	<!--android:background="#263238"-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:showDividers="middle">
+
+		<include
+			layout="@layout/left_drawer_header"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+		<Spinner
+			android:id="@+id/cbKind"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:text="*devotion name"
+			tools:ignore="HardcodedText"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/tCurrentDate"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			android:gravity="center"
+			android:text="*current date"
+			android:textSize="16sp"
+			tools:ignore="HardcodedText" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="48dp">
+
+			<ImageButton
+				android:id="@+id/bPrev"
+				style="?buttonBarButtonStyle"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:contentDescription="@string/desc_previous_day"
+				android:src="@drawable/ic_nav_left_light" />
+
+			<ImageButton
+				android:id="@+id/bReload"
+				style="?buttonBarButtonStyle"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:contentDescription="@string/redownload"
+				android:src="@drawable/ic_action_reload" />
+
+			<ImageButton
+				android:id="@+id/bNext"
+				style="?buttonBarButtonStyle"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:contentDescription="@string/desc_next_day"
+				android:src="@drawable/ic_nav_right_light" />
+		</LinearLayout>
+
+		<include
+			layout="@layout/left_drawer_footer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+</view>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?actionBarSize"
+		android:background="?attr/colorPrimary" />
+
+	<android.support.design.widget.TabLayout
+		android:id="@+id/tablayout"
+		android:layout_below="@id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?actionBarSize" />
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewPager"
+		android:layout_below="@id/tablayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="@dimen/ad_banner_size"
+		tools:context="yuku.alkitab.base.ac.VersionsActivity" />
+
+	<com.google.android.gms.ads.AdView
+		android:id="@+id/adView"
+		android:layout_alignParentBottom="true"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ad_banner_size"
+		android:background="@android:color/white"
+		ads:adSize="SMART_BANNER"
+		ads:adUnitId="@string/ad_unit_id" />
+
+</RelativeLayout>

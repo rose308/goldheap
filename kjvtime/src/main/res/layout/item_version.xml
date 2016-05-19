@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="48dp">
+
+		<TextView
+			android:id="@+id/tLanguage"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:text="*Language Name"
+			android:layout_marginBottom="4dp"
+			android:textColor="#898989"
+			android:textSize="12sp"
+			tools:ignore="HardcodedText" />
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:minHeight="48dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/bLongName"
+			android:background="?selectableItemBackground"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:drawablePadding="8dp"
+			android:gravity="center_vertical"
+			android:text="*Long version name"
+			android:textAppearance="?android:textAppearanceMedium"
+			tools:ignore="HardcodedText" />
+
+		<FrameLayout
+			android:id="@+id/panelRight"
+			android:layout_width="48dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0">
+
+			<CheckBox
+				android:id="@+id/cActive"
+				style="?buttonBarButtonStyle"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="8dp"
+				android:clickable="false"
+				tools:ignore="RtlHardcoded" />
+
+			<ProgressBar
+				android:id="@+id/progress"
+				style="?indeterminateProgressStyle"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:indeterminate="true"
+				android:padding="12dp" />
+
+		</FrameLayout>
+
+		<ImageView
+			android:id="@+id/drag_handle"
+			android:layout_width="48dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="fill_vertical|end"
+			android:src="@drawable/ic_drag_handle"
+			android:contentDescription="@string/desc_drag_to_reorder_versions"
+			android:scaleType="center" />
+
+	</LinearLayout>
+
+</LinearLayout>

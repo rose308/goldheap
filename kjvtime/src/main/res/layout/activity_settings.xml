@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/lsHeaders"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+	<FrameLayout
+		android:id="@+id/fragment_container"
+		android:layout_width="match_parent"
+		android:layout_marginBottom="@dimen/ad_banner_size"
+		android:layout_height="match_parent" />
+
+	<com.google.android.gms.ads.AdView
+		android:id="@+id/adView"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/ad_banner_size"
+		android:background="@android:color/white"
+		ads:adSize="SMART_BANNER"
+		ads:adUnitId="@string/ad_unit_id"
+		android:layout_gravity="bottom" />
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Button bar with OK button -->
+<LinearLayout
+	android:id="@+id/ok_panel"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:divider="?android:attr/dividerHorizontal"
+	android:orientation="vertical"
+	android:paddingTop="8dp"
+	android:showDividers="beginning">
+
+	<LinearLayout
+		style="?buttonBarStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:measureWithLargestChild="true"
+		android:orientation="horizontal"
+		tools:ignore="UselessParent">
+
+		<Button
+			android:id="@+id/bCancel"
+			style="?buttonBarButtonStyle"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:maxLines="2"
+			android:text="@string/cancel" />
+
+		<Button
+			android:id="@+id/bOk"
+			style="?buttonBarButtonStyle"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_weight="1"
+			android:maxLines="2"
+			android:text="@string/ok" />
+
+	</LinearLayout>
+
+</LinearLayout>

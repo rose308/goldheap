@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+			android:gravity="top|right"
+            android:textSize="12sp"
+            android:alpha="0.6"
+            android:text="2099-12-32"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/lCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/lDate"
+            android:text="*Caption or verse reference, etc."
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"
+			android:layout_marginRight="8dp"
+            android:maxLines="3"
+            android:ellipsize="end" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lSnippet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="*Verse snippet or note content, etc. Verse snippet or note content, etc. Verse snippet or note content, etc. Verse snippet or note content, etc. Verse snippet or note content, etc. Verse snippet or note content, etc. Verse snippet or note content, etc. Verse snippet or note content, etc. "
+        tools:ignore="HardcodedText"
+        android:textSize="14sp"
+		android:maxLines="4"
+		android:ellipsize="end" />
+
+    <yuku.devoxx.flowlayout.FlowLayout
+        android:id="@+id/panelLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:horizontalSpacing="8dp"
+        app:verticalSpacing="6dp" />
+
+</LinearLayout>

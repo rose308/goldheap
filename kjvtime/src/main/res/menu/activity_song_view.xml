@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/menuMediaControl"
+		android:enabled="false"
+		android:icon="@drawable/ic_action_hollowplay"
+		app:showAsAction="always"
+		android:title="@string/menuPlay" />
+
+	<item
+		android:id="@+id/menuSearch"
+		android:icon="@drawable/ic_menu_search"
+		app:showAsAction="always"
+		android:title="@string/search" />
+
+    <item
+        android:id="@+id/menuCopy"
+        android:icon="@drawable/ic_menu_copy"
+        android:title="@string/sn_menu_copy"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menuShare"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/menuShare"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuUpdateBook"
+        android:title="@string/sn_update_book"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuDeleteSongBook"
+        android:title="@string/sn_delete_song_book"
+        app:showAsAction="never" />
+
+</menu>

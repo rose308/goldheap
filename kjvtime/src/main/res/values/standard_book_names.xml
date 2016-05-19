@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="standard_book_names_in" translatable="false">
+        <item>Kejadian</item>
+        <item>Keluaran</item>
+        <item>Imamat</item>
+        <item>Bilangan</item>
+        <item>Ulangan</item>
+        <item>Yosua</item>
+        <item>Hakim-hakim</item>
+        <item>Rut</item>
+        <item>1 Samuel</item>
+        <item>2 Samuel</item>
+        <item>1 Raja-raja</item>
+        <item>2 Raja-raja</item>
+        <item>1 Tawarikh</item>
+        <item>2 Tawarikh</item>
+        <item>Ezra</item>
+        <item>Nehemia</item>
+        <item>Ester</item>
+        <item>Ayub</item>
+        <item>Mazmur</item>
+        <item>Amsal</item>
+        <item>Pengkotbah</item>
+        <item>Kidung Agung</item>
+        <item>Yesaya</item>
+        <item>Yeremia</item>
+        <item>Ratapan</item>
+        <item>Yehezkiel</item>
+        <item>Daniel</item>
+        <item>Hosea</item>
+        <item>Yoel</item>
+        <item>Amos</item>
+        <item>Obaja</item>
+        <item>Yunus</item>
+        <item>Mikha</item>
+        <item>Nahum</item>
+        <item>Habakuk</item>
+        <item>Zefanya</item>
+        <item>Hagai</item>
+        <item>Zakharia</item>
+        <item>Maleakhi</item>
+        <item>Matius</item>
+        <item>Markus</item>
+        <item>Lukas</item>
+        <item>Yohanes</item>
+        <item>Kisah Para Rasul</item>
+        <item>Roma</item>
+        <item>1 Korintus</item>
+        <item>2 Korintus</item>
+        <item>Galatia</item>
+        <item>Efesus</item>
+        <item>Filipi</item>
+        <item>Kolose</item>
+        <item>1 Tesalonika</item>
+        <item>2 Tesalonika</item>
+        <item>1 Timotius</item>
+        <item>2 Timotius</item>
+        <item>Titus</item>
+        <item>Filemon</item>
+        <item>Ibrani</item>
+        <item>Yakobus</item>
+        <item>1 Petrus</item>
+        <item>2 Petrus</item>
+        <item>1 Yohanes</item>
+        <item>2 Yohanes</item>
+        <item>3 Yohanes</item>
+        <item>Yudas</item>
+        <item>Wahyu</item>
+    </string-array>
+</resources>

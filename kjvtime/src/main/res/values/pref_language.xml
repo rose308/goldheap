@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="pref_language_labels" tools:ignore="MissingTranslation">
+        <item>@string/pref_language_label_default</item>
+        <item>Afrikaans</item>
+        <item>Bahasa Indonesia</item>
+        <item>Čeština</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Latviešu</item>
+        <item>Nederlands</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Română</item>
+        <item>Русский</item>
+        <item>Українська</item>
+        <item>日本語</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+    </string-array>
+    <string-array name="pref_language_values" translatable="false">
+        <item>DEFAULT</item>
+        <item>af</item>
+        <item>in</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>lv</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>uk</item>
+        <item>ja</item>
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+    </string-array>
+</resources>
